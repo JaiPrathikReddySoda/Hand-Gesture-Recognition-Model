@@ -92,7 +92,7 @@ Hand sign recognition and finger gesture recognition can add and change training
 ### Hand sign recognition training
 #### 1.Learning data collection
 Press "k" to enter the mode to save key points（displayed as 「MODE:Logging Key Point」）<br>
-<img src="https://user-images.githubusercontent.com/37477845/102235423-aa6cb680-3f35-11eb-8ebd-5d823e211447.jpg" width="60%"><br><br>
+<br>
 If you press "0" to "9", the key points will be added to "model/keypoint_classifier/keypoint.csv" as shown below.<br>
 1st column: Pressed number (used as class ID), 2nd and subsequent columns: Key point coordinates<br>
 In the initial state, three types of learning data are included: open hand (class ID: 0), close hand (class ID: 1), and pointing (class ID: 2).<br>
@@ -123,7 +123,7 @@ To change the number of training data classes, change the value of "NUM_CLASSES 
 
 #### X.Model structure
 The image of the model prepared in "[point_history_classification.ipynb](point_history_classification.ipynb)" is as follows.
-The model using "LSTM" is as follows. <br>Please change "use_lstm = False" to "True" when using (tf-nightly required (as of 2020/12/16))<br>
+The model using "LSTM" is as follows. <br>Please change "use_lstm = False" to "True"<br>
 
 # Reference
 * [MediaPipe](https://mediapipe.dev/)
